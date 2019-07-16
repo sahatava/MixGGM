@@ -74,7 +74,7 @@ out_adj = partial2adj(partial, threshold)
 ```
 ##### Arguments
 ```
-partial-------------> partial correlation matrix as a result of running the MixMPLN
+partial-------------> partial correlation matrix as a result of running the MixGGM
 threshold-----------> a value between 0 and 1
 ```
 ##### Values
@@ -87,7 +87,7 @@ out_adj-------------> 1 and -1 indicate edge existance, 0 indicates no edge
  ` 
 ```
 M=as.matrix(read.csv("real_data.csv",sep=",",header=TRUE,row.names=1,check.names=FALSE))
-out_MixGGM = MixMPLN( M , K=2 , penalty="CV", init = "Random" , rep = 3)
+out_MixGGM = MixGGM( M , K=2 , penalty="CV", init = "Random" , rep = 3)
 visualize(out_MixGGM$partial[[1]] , threshold=0.3 )
 ```
 
