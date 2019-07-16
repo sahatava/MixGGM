@@ -12,9 +12,8 @@ library(corpcor)
 library(cvTools)
 library(huge)
 library(edgeR)
-library(factoextra)
 library(igraph)
-library(ROCR)
+
 ```
 ## 2-Installation
 After installing the previous prerequisities, please run the following lines to install the "MixGGM"
